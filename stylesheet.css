@@ -15,8 +15,15 @@
 }
 
 
+span{
+    font-family: cursive;
+    font-weight: 800;
+}
 
-
+h3{
+    font-weight: 900;
+    text-decoration: underline;
+}
 .logo{
     width: 120px;
     padding: 20px 0;

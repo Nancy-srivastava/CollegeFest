@@ -45,23 +45,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="./About.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sponsors</a>
+              <a class="nav-link" href="./Sponsors.html">Sponsors</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Events
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Technical Events</a></li>
-                <li><a class="dropdown-item" href="#">Literary Events</a></li>
-                <li><a class="dropdown-item" href="#">Sports Events</a></li>
-                <li><a class="dropdown-item" href="#">Cultural Events</a></li>
+                <li><a class="dropdown-item" href="./TechnicalEvents.html">Technical Events</a></li>
+                <li><a class="dropdown-item" href="./LiteraryEvents.html">Literary Events</a></li>
+                <li><a class="dropdown-item" href="./SportsEvents.html">Sports Events</a></li>
+                <li><a class="dropdown-item" href="./CulturalEvents.html">Cultural Events</a></li>
               </ul>
             </li>
           </ul>
@@ -106,6 +106,39 @@
       
     </div>
     </div>  
+    
+    <script>
+
+      var countDown = new Date("May 3, 2024").getTime();
+      var x = setInterval(function(){
+        var now = new Date().getTime();
+        var distance = countDown - now;
+
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+        
+  
+        if(distance < 0){
+          clearInterval(x);
+          document.getElementById("days").innerHTML = "00";
+          document.getElementById("hours").innerHTML = "00";
+          document.getElementById("minutes").innerHTML = "00";
+          document.getElementById("seconds").innerHTML = "00";
+        
+  
+        }
+      }, 1000);
+  
+  
   
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
