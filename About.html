@@ -19,6 +19,18 @@
     padding: 6%;
     margin: auto; 
 }
+.video-container {
+  max-width: 100%;
+  border-radius: 20px; 
+  overflow: hidden;
+}
+
+.rounded-video {
+  width: 100%;
+}
+
+
+
       </style>
     <!-- MDB icon -->
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
@@ -73,16 +85,15 @@
     </div>
   </nav>
 
-  <div class="bg-image" >
-     <div class="ratio ratio-16x9">
-      <iframe src="./video1.mp4" title="Yuvaan video" allowfullscreen height="100vh" width="50vw"></iframe>
-
-    </div> 
+  <div class="bg-image">
     <div class="card mb-3" style="width: 85vw;">
       <div class="row g-0">
-         <div class="col-md-4">
-         <!-- <img src="./images/img.jpg" class="img-fluid rounded-start" alt="Poster"> -->
-
+        <div class="col-md-4">
+          <div class="video-container">
+            <video controls autoplay loop muted class="rounded-video">
+              <source src="./video1.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
         <div class="col-md-8">
           <div class="card-body"style="font-size: 16px;" >
