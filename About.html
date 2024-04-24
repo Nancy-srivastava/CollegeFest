@@ -9,16 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
       .bg-image {
-        position: absolute;
-        top: 50vh;
-        left: 50vw;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        color: white;
-        padding: 6%;
-        margin: auto;
-
-      }
+    background-image: url(./background-image.jpg);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: white;
+    padding: 6%;
+    margin: auto; 
+}
       </style>
     <!-- MDB icon -->
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
@@ -73,15 +73,16 @@
     </div>
   </nav>
 
-  <div class="bg-image" style= "background-image: url(./background-image.jpg) ; height:100vh;">
-    <!-- <div class="ratio ratio-16x9">
-      <iframe src="./video.mp4" title="Yuvaan video" allowfullscreen height="100vh" width="50vw"></iframe>
+  <div class="bg-image" >
+     <div class="ratio ratio-16x9">
+      <iframe src="./video1.mp4" title="Yuvaan video" allowfullscreen height="100vh" width="50vw"></iframe>
 
-    </div> -->
+    </div> 
     <div class="card mb-3" style="width: 85vw;">
       <div class="row g-0">
-        <div class="col-md-4">
-          <img src="./images/img.jpg" class="img-fluid rounded-start" alt="Poster">
+         <div class="col-md-4">
+         <!-- <img src="./images/img.jpg" class="img-fluid rounded-start" alt="Poster"> -->
+
         </div>
         <div class="col-md-8">
           <div class="card-body"style="font-size: 16px;" >
@@ -100,7 +101,7 @@
               <span>Innovative Competitions:</span> Get ready to unleash your competitive spirit in a series of exhilarating competitions designed to test your skills and ignite your passion. Whether you're a wordsmith, a debater, a coder, or a gamer, there's something for everyone at Yuvaan 2.0
               
 <!--               
-              - **Carnival Atmosphere:** Indulge your taste buds and satisfy your cravings at the Yuvaan carnival, where an array of culinary delights awaits. From street food favorites to gourmet treats, there's no shortage of gastronomic adventures to embark on. -->
+              - *Carnival Atmosphere:* Indulge your taste buds and satisfy your cravings at the Yuvaan carnival, where an array of culinary delights awaits. From street food favorites to gourmet treats, there's no shortage of gastronomic adventures to embark on. -->
               <br>
               <span>Yuvaan 2.0 is more than just a college fest; it's a celebration of youth, talent, and the limitless possibilities that lie ahead. Join us as we come together to create unforgettable memories, foster meaningful connections, and inspire positive change. Together, let's make Yuvaan 2.0 a testament to the spirit of unity, creativity, and excellence that defines the institution!</span></p>
             
@@ -115,5 +116,5 @@
   
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body> 
+</body> 
 </html>
